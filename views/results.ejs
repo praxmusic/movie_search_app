@@ -1,0 +1,25 @@
+
+<link rel="stylesheet" href="results.css">
+
+<div class="entry">
+    <% data["Search"].forEach(function(movie){ %> 
+</div>
+
+
+<div id="container">
+                <div class="header">
+                    <p class="name"><%= movie["Title"] %> </p>
+                    <p class="year"><%= movie["Year"] %> </p> 
+                </div>    
+                <div class="poster">
+                    <img src= '<%= movie["Poster"] %>'' alt="movie poster">
+                </div>
+                <div class="info">
+                        <p> <%= movie["Plot"] %> </p>
+            
+                </div>
+        <% }) %>
+</div>
+
+<a href="/">Search Again</a>
+
